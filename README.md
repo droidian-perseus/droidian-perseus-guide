@@ -42,13 +42,7 @@ TWRP:
 - Go back to main menu and reboot to `System` (TWRP might complain that there is no OS installed, but that's fine)
 - The first boot may take longer, and at least one spontaneous reboot is expected during the process
 - If all goes well, your phone will boot to the Droidian lock screen, the unlock code is `1234`
-- Now open the `King's Cross` terminal app
-
-    - run `fix-wifi.sh`
-    
-    - type in `1234`
-    
-    - `enter`
+- Now open the `King's Cross` terminal app and run this command: `sudo systemctl enable enable-ipa` (the password is `1234`)
 - Reboot the phone (long press power button)
 - Installation is complete
 
