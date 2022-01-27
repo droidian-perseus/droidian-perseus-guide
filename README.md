@@ -9,7 +9,7 @@ A collection of tips to install and use Droidian on the Pocophone F1 (beryllium)
 
 ## Installation
 ### 0. Download files
-- Droidian: `droidian-rootfs` and `droidian-devtools` for `arm64` from [the Droidian repo](https://github.com/droidian-images/rootfs-api28gsi-all/releases/tag/droidian%2Fbullseye%2F23)
+- Latest nightly or stable release of `droidian-rootfs` and `droidian-devtools` for `arm64` from [the Droidian repo](https://github.com/droidian-images/rootfs-api28gsi-all/releases)
 - Latest [boot image](https://github.com/Unofficial-droidian-for-pocof1/linux_android_xiaomi_beryllium/releases)
 - Latest [adaptation zip](https://github.com/Unofficial-droidian-for-pocof1/android-recovery-beryllium-adaptation/releases)
 - [Vendor image](https://github.com/ubports-beryllium/artifacts/releases/download/v3/vendor.img)
@@ -53,7 +53,7 @@ Mobile data works after setting up your APN. It may stop working after a call, t
 ### Additional tweaks
 For other tweaks, open the `King's Cross` terminal app, and run `beryllium-extras.sh`.
 The following options are available:
-- Notch fix (moves the clock from its original invisible position to the left side)
+- Notch fix (moves the clock from its original invisible position to the right side)
 - Switching between dark mode and light mode (Adwaita theme)
 - Automated installation of Waydroid
 
