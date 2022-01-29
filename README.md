@@ -46,7 +46,11 @@ TWRP:
 - Reboot the phone (long press power button)
 - Installation is complete
 
-## Tweaks
+## Notes
+
+### SIM slot
+Dual-SIM mode is not supported as of now. Only the SIM2 slot is active, so a microSD card can be used at the same time.
+
 ### Mobile data
 Mobile data works after setting up your APN. It may stop working after a call, then you need to tap on/off twice in the settings and it should work again.
 
