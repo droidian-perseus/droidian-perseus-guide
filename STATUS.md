@@ -15,6 +15,7 @@ This represents the state of the Droidian port when flashed according to the [gu
 - Camera: Photo
 - Camera: Switch between back and front camera
 - Cellular: Carrier info, signal strength
+- Cellular: Change audio routings (Speakerphone, Earphone)
 - Cellular: Flightmode works
 - Cellular: Incoming, outgoing calls
 - Cellular: Voice in calls
