@@ -52,7 +52,7 @@ TWRP:
 Dual-SIM mode is not supported as of now. Only the SIM2 slot is active, so a microSD card can be used at the same time.
 
 ### Mobile data
-Mobile data works after setting up your APN. It may stop working after a call, then you need to tap on/off twice in the settings and it should work again.
+Basic cellular features (phone calls, SMS) are working, but mobile data does not seem to work as of now. In order to test it, set your Access Point Name (`APN`) in `Settings`, and try the various modes supported by your network (2G, 3G, 4G, etc.). Please, let us know if you succeed.
 
 ### Additional tweaks
 For other tweaks, open the `King's Cross` terminal app, and run `beryllium-extras.sh`.
