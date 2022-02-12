@@ -46,6 +46,7 @@ TWRP:
 - Now open the `King's Cross` terminal app and run this command: `sudo systemctl enable enable-ipa` (the password is `1234`)
 - Reboot the phone (long press power button)
 - Installation is complete
+- Flashing the `devtools` zip enabled `SSH` over USB. To use it, connect your phone to your computer and type `ssh droidian@10.15.19.82`, the password is `1234` (on Windows, you may need [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/))
 
 ## Notes
 
