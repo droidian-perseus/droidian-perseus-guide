@@ -6,6 +6,7 @@ A collection of tips to install and use Droidian on the Pocophone F1 (beryllium)
 - A USB 2.0 port/hub with actual USB 2.0 controller (fastboot on USB 3.0 can be problematic with Poco F1)
 - Unlocked bootloader
 - Backup all your data, as **your phone will be WIPED**
+- It is also recommended to take a note about your `Acces Point Name` in Android `Settings` before starting the procedure (you will need it for mobile data)
 
 ## Installation
 ### 0. Download files
@@ -52,7 +53,24 @@ TWRP:
 Dual-SIM mode is not supported as of now. Only the SIM2 slot is active, so a microSD card can be used at the same time.
 
 ### Mobile data
-Basic cellular features (phone calls, SMS) are working, but mobile data does not seem to work as of now. In order to test it, set your Access Point Name (`APN`) in `Settings`, and try the various modes supported by your network (2G, 3G, 4G, etc.). Please, let us know if you succeed.
+Mobile data should work, but it needs to be set up manually. The good part is that the configuration is persistent, so you need to do this only once.
+- Open the `Settings` app and tap `Mobile`, then tap `Access Point Names`
+- Tap the `+` in the top right corner of the pop-up
+- Fill out the textboxes based on your settings in Android. The `Name` can be anything, e. g., the name of your carrier. The `APN` is likely some sort of an URL, like `internet.carrier.net` or something similar. If you didn't see a `Username` and `Password` in Android, you can skip these. 
+
+In some cases, rebooting your phone or turning mobile data on and off a few times is enough.
+Otherwise we'll have to give the same settings to [oFono](https://en.wikipedia.org/wiki/OFono) as well.
+- Open the `King's Cross` terminal app or use `SSH` and type `cd /usr/share/ofono/scripts`
+- To check your current setup, type `./list-contexts`, look for the first context, called `[ /ril_1/context1 ]`
+- Notice that context has `Name`, `Type`, `AccessPointName`, `Username`, and `Password` attributes among others, we'll need to change these to match the valid settings from Android. 
+- Now deactivate this context to be able to make changes to it: `./deactivate-context 1`
+- And now make your changes like this: `./set-context-property 1 $ATTRIBUTE $VALUE`, where the `1` is for `[ /ril_1/context1 ]`, the `$ATTRIBUTE` is one of the attributes listed above, and the `$VALUE` will be the value you need to enter. make sure that the `Name` and `AccessPointName` match the `Name` and `APN` you entered in the settings menu. If an attribute needs to be empty, set it to `""`.
+- When you make your changes, you can use `./list-contexts` to see them.
+- When everything looks good, activate the updated context: `./activate-context 1` 
+- If all went well, by running`./list-contexts` again you should see that the `Active` attribute is now `1`, and under the `Settings` attribute you can see the network parameters (Address, Netmask, Gateway, etc.) assigned by your carrier.
+- You may need to reboot or turn mobile data on and off a few times, but mobile data should be working now.
+
+- Pro tip: once you configured everything, you can type `history` to see your previous commands. Save them to a script that does all of this for you next time.
 
 ### Additional tweaks
 For other tweaks, open the `King's Cross` terminal app, and run `beryllium-extras.sh`.
@@ -70,5 +88,6 @@ The following options are available:
 
 [UBports](https://ubuntu-touch.io/)
 
+[Yunior](https://gitlab.com/Yuniorkaito) 
 
 For further assistance, visit the [Droidian for Poco F1](https://t.me/pocof1droidian) and [Droidian](https://t.me/droidianlinux) Telegram groups.
