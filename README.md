@@ -53,6 +53,9 @@ TWRP:
 ### SIM slot
 Dual-SIM mode is not supported as of now. Only the SIM2 slot is active, so a microSD card can be used at the same time.
 
+### Applications
+You can find a list of mobile-friendly Linux applications at [LINMOBapps](https://linmobapps.frama.io/).
+
 ### Mobile data
 Mobile data should work, but it needs to be set up manually. The good part is that the configuration is persistent, so you need to do this only once.
 - Open the `Settings` app and tap `Mobile`, then tap `Access Point Names`
@@ -87,8 +90,14 @@ The following options are available:
 
 [Droidian](http://droidian.org/)
 
+[Mobian](https://mobian-project.org/)
+
 [UBports](https://ubuntu-touch.io/)
 
-[Yunior](https://gitlab.com/Yuniorkaito) 
+Thanks for the tips to:
+
+[Yunior](https://gitlab.com/Yuniorkaito)
+
+Jaymz665
 
 For further assistance, visit the [Droidian for Poco F1](https://t.me/pocof1droidian) and [Droidian](https://t.me/droidianlinux) Telegram groups.
