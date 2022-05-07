@@ -10,7 +10,8 @@ A collection of tips to install and use Droidian on the Pocophone F1 (beryllium)
 
 ## Installation
 ### 0. Download files
-- Latest nightly or stable release of `droidian-rootfs` and `droidian-devtools` for `arm64` from [the Droidian repo](https://github.com/droidian-images/rootfs-api28gsi-all/releases)
+- Latest nightly or stable release of `droidian-rootfs` for `arm64` from [the Droidian repo](https://github.com/droidian-images/rootfs-api28gsi-all/releases)
+- For the stable release, also download the  `droidian-devtools` for `arm64` from [the Droidian repo](https://github.com/droidian-images/rootfs-api28gsi-all/releases)
 - Latest [boot image](https://github.com/Unofficial-droidian-for-pocof1/linux_android_xiaomi_beryllium/releases)
 - Latest [adaptation zip](https://github.com/Unofficial-droidian-for-pocof1/android-recovery-beryllium-adaptation/releases)
 - [Vendor image](https://github.com/ubports-beryllium/artifacts/releases/download/v3/vendor.img)
@@ -38,7 +39,7 @@ TWRP:
 - Install image: `vendor.img` to `Vendor` partition
 - Install zip file: `fw_beryllium_miui_POCOF1Global_9.6.27_6673f8a455_9.0.zip`
 - Install zip file: `droidian-rootfs-api28gsi_arm64_YYYYMMDD.zip` 
-- Install zip file: `droidian-devtools_arm64_YYYYMMDD.zip`
+- Install zip file: `droidian-devtools_arm64_YYYYMMDD.zip` (this is included in nightly releases)
 - Install zip file: `android-recovery-beryllium-adaptation.zip`
 - Go back to main menu and reboot to `System` (TWRP might complain that there is no OS installed, but that's fine)
 - The first boot may take longer, and at least one spontaneous reboot is expected during the process
@@ -54,7 +55,7 @@ TWRP:
 Dual-SIM mode is not supported as of now. Only the SIM2 slot is active, so a microSD card can be used at the same time.
 
 ### Applications
-You can find a list of mobile-friendly Linux applications at [LINMOBapps](https://linmobapps.frama.io/).
+You can find a list of mobile-friendly Linux applications at [LinuxPhoneApps](https://linuxphoneapps.org/).
 
 ### Mobile data
 Mobile data should work, but it needs to be set up manually. The good part is that the configuration is persistent, so you need to do this only once.
