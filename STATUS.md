@@ -1,5 +1,5 @@
-# Device Checklist for Pocophone F1 (beryllium) on Droidian
-This represents the state of the Droidian port when flashed according to the [guide](https://github.com/Unofficial-droidian-for-pocof1/droidian-beryllium-guide).
+# Device Checklist for Xiaomi Mi MIX 3 (perseus) on Droidian
+This represents the state of the Droidian port when flashed according to the [guide](https://github.com/droidian-perseus/droidian-perseus-guide).
  
 ### Working
 - Actors: Manual brightness
@@ -20,6 +20,9 @@ This represents the state of the Droidian port when flashed according to the [gu
 - Cellular: Incoming, outgoing calls
 - Cellular: Voice in calls
 - Cellular: SMS in, out
+- Cellular: Data connection
+- Cellular: Enable/disable mobile data
+- Cellular: Switch connection speed between 2G/3G/4G
 - Endurance: Battery lifetime > 24h from 100%
 - Misc: Waydroid
 - Misc: AppArmor patches applied to kernel
@@ -40,14 +43,11 @@ This represents the state of the Droidian port when flashed according to the [gu
 - WiFi: Persistent MAC address between reboots
 
 ### Working with additional steps
-- Misc: Reset to factory defaults (can be done in recovery)
+- Misc: Reset to factory defaults (can be done in recovery by removing `/data/rootfs-overlay` directory)
 
 ### Not working
 - Camera: Video (creates an empty `.mkv` file and freezes; in Waydroid camera functions fully)
 - Sensors: Fingerprint reader, register and use fingerprints (fingerprint sensor just wakes up screen)
-- Cellular: Data connection
-- Cellular: Enable/disable mobile data
-- Cellular: Switch connection speed between 2G/3G/4G works for SIM2 (no mobile data)
 - Cellular: Switch preferred SIM for calling and SMS (no dual SIM support)
 - WiFi: Hotspot cannot serve data to clients (no mobile data)
 - Misc: Shutdown / Reboot (phone hangs after both, long press Power button to turn on again)
