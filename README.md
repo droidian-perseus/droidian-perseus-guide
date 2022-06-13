@@ -54,10 +54,10 @@ The following options are available:
 - Automated installation of Waydroid (GAPPS included)
 
 ## Credit
-[Perseus X](https://github.com/xperseus-dev)
-[Joel Selvaraj](https://github.com/joelselvaraj)
-[1petro](https://github.com/1petro)
-[Droidian](http://droidian.org/)
+[Perseus X](https://github.com/xperseus-dev) \
+[Joel Selvaraj](https://github.com/joelselvaraj) \
+[1petro](https://github.com/1petro) \
+[Droidian](http://droidian.org/) \
 [UBports](https://ubuntu-touch.io/)
 
 
