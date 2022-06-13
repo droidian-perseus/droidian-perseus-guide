@@ -31,7 +31,7 @@ PC:
 - Copy the downloaded files to the internal storage of the phone
 
 TWRP:
-- Install zip file: fw-vendor_perseus_miui_MIMIX3_9.9.3_a9dbc91c30_9.0.zip
+- Install zip file: `fw-vendor_perseus_miui_MIMIX3_9.9.3_a9dbc91c30_9.0.zip`
 - Install zip file: `droidian-rootfs-api28gsi_arm64_YYYYMMDD.zip` 
 - Install zip file: `android-recovery-perseus-adaptation_YYYYMMDD.zip`
 - Go back to main menu and reboot to `System` (TWRP might complain that there is no OS installed, but that's fine)
